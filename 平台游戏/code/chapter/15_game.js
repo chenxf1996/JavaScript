@@ -1,3 +1,4 @@
+
 var simpleLevelPlan = [
   "                      ",
   "                      ",
@@ -340,7 +341,8 @@ function runLevel(level, Display, andThen) {
 				} else if (running == "pausing") {   
 					running = "yes";      
 					} else if (running == "yes") {   
-						running = "pausing";        }   
+						running = "pausing";
+alert("Game pausing");        }   
 						}    }   
 						addEventListener("keydown", handleKey);  
 						var arrows = trackKeys(arrowCodes);  
@@ -391,3 +393,9 @@ console.log("You win!");
 }      });    }   
 startLevel(0, 3);  } 
 runGame(GAME_LEVELS, DOMDisplay);
+
+
+
+
+
+
