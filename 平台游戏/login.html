@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<style>  
+body{  
+margin-left:auto;  
+margin-right:auto; 
+margin-TOP:100PX; 
+width:20em;  
+}
+</style>
+
+<body>
+<!--下面是用户名输入框-->
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input id="userName" type="text" class="form-control" placeholder="用户名" aria-describedby="basic-addon1">
+</div>
+<br>
+<!--下面是密码输入框-->
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input id="passWord" type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
+</div>
+<br>
+<!--下面是登陆按钮,包括颜色控制-->
+<button onclick="b()" type="button" style="width:280px;" class="btn btn-default">登 陆</button>
+
+<button onclick="a()" type="button" style="width:280px;" class="btn btn-default">注 册</button>
+
+</body>
+<script>
+function a(){
+window.location.href = "D:/bootstrap-3.3.5-dist/register.html";
+}
+function b(){
+window.location.href = "file:///C:/Users/admin/Desktop/%E5%B9%B3%E5%8F%B0%E6%B8%B8%E6%88%8F/index.html";
+}
+</script>
+</html>

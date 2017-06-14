@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<style>  
+body{  
+margin-left:auto;  
+margin-right:auto; 
+margin-TOP:100PX; 
+width:20em;  
+}
+</style>
+
+<body>
+<!--下面是用户名输入框-->
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input id="userName" type="text" class="form-control" placeholder="用户名" aria-describedby="basic-addon1">
+</div>
+<br>
+<!--下面是密码输入框-->
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input id="passWord1" type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
+</div>
+<br>
+<!--下面是密码再次输入框-->
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input id="passWord2" type="text" class="form-control" placeholder="再次输入密码" aria-describedby="basic-addon1">
+</div>
+<br>
+<!--下面是登陆按钮,包括颜色控制-->
+<button onclick="register()" type="button" style="width:280px;" class="btn btn-default">注 册</button>
+</body>
+<script language="JavaScript">
+function register(){
+ if(document.getElementById('userName').value=='')
+ {
+ alert("请检查用户名是否为空！");
+ document.getElementById('username').focus();
+ return false;
+ }
+  if (document.getElementById('passWord1').value == "") {
+        alert("密码不能为空！");
+        document.getElementById('passWord1').focus();
+        return false;
+    }
+  if (document.getElementById('passWord2').value == "") {
+        alert("请再次输入密码！");
+        document.getElementById('passWord2').focus();
+        return false;
+    }
+  if (document.getElementById('passWord2').value != document.getElementById('passWord1').value ) {
+        alert("两次输入的密码不一致！");
+        document.getElementById('passWord2').focus();
+        return false;
+    }
+ if (document.getElementById('passWord2').value == document.getElementById('passWord1').value ) {
+        alert("注册成功！");
+        window.location.href = "D:/bootstrap-3.3.5-dist/login.html";        
+    }
+ 
+}
+</script>
+</html>
